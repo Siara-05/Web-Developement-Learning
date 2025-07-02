@@ -31,3 +31,4 @@ document.getElementById("btn").addEventListener(
 // Initial calling
 // Call the function once when the page loads
 getcolor();
+
