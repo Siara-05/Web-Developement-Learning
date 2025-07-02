@@ -1,0 +1,52 @@
+
+/* Importing Google Fonts: Roboto and Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resetting default styles and applying a global font */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+
+body{
+    /* background-color: rgb(117, 195, 237); */
+    transition: 1s;
+}
+
+/* Main wrapper that takes full viewport height and centers its conten */
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Container holding the color code and button */
+.container{
+    width: 30rem;
+    /* height: 15rem; */
+    background-color: aliceblue;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+button{
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
+    display: block;
+    color: rgb(0, 0, 0);
+    background-color: rgb(117, 195, 237);
+    border: none;
+    border-radius: 15px;
+    margin-top: 5px;
+    font-weight: 450;
+}
