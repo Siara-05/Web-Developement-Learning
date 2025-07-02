@@ -10,8 +10,6 @@
     font-family: "Roboto Condensed", sans-serif;
 }
 
-
-
 body{
     /* background-color: rgb(117, 195, 237); */
     transition: 1s;
@@ -50,3 +48,4 @@ button{
     margin-top: 5px;
     font-weight: 450;
 }
+
