@@ -1,1 +1,3 @@
-// including the apikeys
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Create audio context
