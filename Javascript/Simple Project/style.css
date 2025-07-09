@@ -1,4 +1,5 @@
 
+
 *{
     padding: 0;
     margin: 0;
@@ -6,3 +7,89 @@
     font-family: "Roboto Condensed", sans-serif;
 }
 
+/* Base Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fce3ec, #e8f0ff); /* soft pink to soft blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Piano Box Container */
+.piano-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 25px; /* curved border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffe0f0; /* light border for soft touch */
+}
+
+/* Heading */
+h1 {
+    color: #444;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Piano Key Area */
+.piano {
+    display: flex;
+    position: relative;
+    margin: 40px auto 20px auto;
+    height: 200px;
+    border-radius: 24px; /* slight curve to piano area */
+    overflow: hidden;
+    padding: 0 10px;
+    background-color: #deeeff;
+}
+
+/* Common Key Styles */
+.key {
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.1s ease;
+}
+
+.key:active, .key.active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* White Key */
+.white {
+    width: 50px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #e9abab;
+    border-radius: 1 0 6px 6px;
+    z-index: 1;
+}
+
+/* Black Key */
+.black {
+    width: 30px;
+    height: 120px;
+    background-color: #333;
+    margin-left: -15px;
+    margin-right: -15px;
+    z-index: 2;
+    border-radius: 0 0 4px 4px;
+}
+
+/* Indian Notation Info */
+.indian-notation {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    background-color: #fef9fb;
+    border: 3px dashed #ffd2e3;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
