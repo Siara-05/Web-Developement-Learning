@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Respponsive Website Tailwind Css </title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Website Tailwind CSS</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
- <style>
+  <!-- Custom Fade-In Animations -->
+  <style>
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -22,87 +26,94 @@
     .animate-delay-2 { animation-delay: 0.6s; }
     .animate-delay-3 { animation-delay: 0.9s; }
   </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'purple-900': '#6b46c1',
-                        'purple-400': '#a78bfa',
-                    },
-                },
-            },
-        }
-    </script>
-  
+
+  <!-- Tailwind Custom Theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'purple-900': '#6b46c1',
+            'purple-400': '#a78bfa',
+          },
+        },
+      },
+    }
+  </script>
 </head>
+
 <body class="bg-gradient-to-r from-rose-100 to-teal-100">
 
-             <div class="flex flex-col min-h-screen gap-3 px-6 py-3 md:px-10 ">
+  <div class="flex flex-col min-h-screen gap-3 px-6 py-3 md:px-10">
 
-                <header class="flex justify-between animate-delay-1 animate-fade-in" >
-                    <a href="" class="flex items-center">
-                    
-                        <!-- <img src="" alt="Logo" class="w-16 h-16"> -->
-                    
-                        <h2 class="text-2xl font-bold"> WFA.</h2>
-                    
-                    </a>
+    <!-- Header -->
+    <header class="flex justify-between animate-delay-1 animate-fade-in">
+      <a href="#" class="flex items-center">
+        <h2 class="text-2xl font-bold">WFA.</h2>
+      </a>
 
-                    <ul class="hidden lg:flex lg:items-center lg:gap-10 lg:text-lg lg:font-medium">
-                        <li><a href=""> Locations</a></li>
-                        <li><a href="#"> Offerings</a></li>
-                        <li><a href="#"> Pricing</a></li>
-                        <li><a href=""> About us</a></li>
-                    </ul>
-                    <div class="hidden lg:flex lg:items-center lg:gap-10 lg:text-lg lg:font-medium">
-                        <a href="" class="font-medium"> Login </a>
-                        <button class="px-2 py-1 font-medium bg-purple-200 rounded-md"> Register</button>
-                    </div>
-                    
-                    <div class="hidden lg:flex lg:items-center lg:gap-10 lg:text-lg lg:font-medium">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                </header>
+      <ul class="hidden lg:flex lg:items-center lg:gap-10 lg:text-lg lg:font-medium">
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Offerings</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
 
+      <div class="hidden lg:flex lg:items-center lg:gap-10 lg:text-lg lg:font-medium">
+        <a href="#" class="font-medium">Login</a>
+        <button class="px-2 py-1 font-medium bg-purple-200 rounded-md">Register</button>
+      </div>
 
-                <main class="lg:flex">
-                    <div class="flex items-center justify-center lg:flex-1 lg:order-2 ;lg:justify-end image-transform">
-                        <img src="wfa.jpg" alt="work from anywhere" class="shadow-2xl outline outline-white shadow-black lg:h-[600px] lg:w-[600px] lg:rounded-full animate-fade-in animate-delay-3"/>
-                    </div>
+      <!-- Mobile Icon (Optional future use) -->
+      <div class="text-2xl lg:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
 
-                    <div class="mt-16 space-y-6 lg:flex-1 lg:order-1 lg:mt-32 text-transform animate-fade-in animate-delay-2">
-                         <div class="text-5xl font-bold leading-tight">
-                             <h1>Let's swich</h1>
-                             <h1>To Remote</h1>
-                         </div>
+    <!-- Main Content -->
+    <main class="lg:flex">
 
-                    <p> WFA provides top-notch office spsaces in prime locations worldwide allowing people to work from anwhere. We provide coworking spaces where people from various backgrounds like remote workers, entrepreneurs, freelancers, and startup enthusiasts can work, connect, and grow their businesses.</p>
+      <!-- Image Section -->
+      <div class="flex items-center justify-center lg:flex-1 lg:order-2 lg:justify-end animate-fade-in animate-delay-3">
+        <img src="wfa.jpg" alt="work from anywhere" 
+             class="shadow-2xl outline outline-white shadow-black lg:h-[600px] lg:w-[600px] lg:rounded-full" />
+      </div>
 
-                    <form action="" class="flex flex-col gap-3 md:flex-row md:gap-0">
-                        <input type="text" placeholder="Enter City" class="px-4 py-3 text-black rounded-md md:w-80 max-md: md:rounded-l-md"/>
-                        <button class="px-4 py-3 font-medium bg-purple-400 rounded-md whitespace-nowrap max-md:rounded-e-md md:rounded-md"> Find Your Office </button>
-                    </form>
+      <!-- Text + Form Section -->
+      <div class="mt-16 space-y-6 lg:flex-1 lg:order-1 lg:mt-32 animate-fade-in animate-delay-2">
+        <div class="text-5xl font-bold leading-tight">
+          <h1>Let's switch</h1>
+          <h1>To Remote</h1>
+        </div>
 
-                    <div class="flex flex-col gap-4 py-8"> 
-                        
-                        <p class="font-semibold">Used by these companies:</p> 
-                        <ul class="flex gap-5 ">
-                            <li><i class="fa-brands fa-twitter fa-2x"></i></li>
-                            <li><i class="fa-brands fa-airbnb fa-2x"></i></li>
-                            <li><i class="fa-brands fa-twitter fa-2x "></i></li>
-                            <li><i class="fa-brands fa-apple fa-2x" ></i></li>
-                        </ul>
+        <p>
+          WFA provides top-notch office spaces in prime locations worldwide, allowing people to work from anywhere.
+          We provide coworking spaces where people from various backgrounds like remote workers, entrepreneurs, freelancers,
+          and startup enthusiasts can work, connect, and grow their businesses.
+        </p>
 
+        <form action="#" class="flex flex-col gap-3 md:flex-row md:gap-0">
+          <input type="text" placeholder="Enter City" 
+                 class="px-4 py-3 text-black rounded-md md:w-80 md:rounded-l-md" />
+          <button class="px-4 py-3 font-medium bg-purple-400 rounded-md whitespace-nowrap md:rounded-md">
+            Find Your Office
+          </button>
+        </form>
 
-                    </div>
+        <!-- Company Logos -->
+        <div class="flex flex-col gap-4 py-8">
+          <p class="font-semibold">Used by these companies:</p>
+          <ul class="flex gap-5">
+            <li><i class="fa-brands fa-twitter fa-2x"></i></li>
+            <li><i class="fa-brands fa-airbnb fa-2x"></i></li>
+            <li><i class="fa-brands fa-twitter fa-2x"></i></li>
+            <li><i class="fa-brands fa-apple fa-2x"></i></li>
+          </ul>
+        </div>
+      </div>
 
-                </div>   
-                </main>
-                 
-             </div>
+    </main>
+  </div>
 
-
-    
 </body>
 </html>
