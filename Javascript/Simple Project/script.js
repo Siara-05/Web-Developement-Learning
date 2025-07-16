@@ -21,3 +21,4 @@ resetBtn.addEventListener("click", function () {
   count = 0; // Reset count
   countDisplay.textContent = count; // Update the screen
 });
+ 

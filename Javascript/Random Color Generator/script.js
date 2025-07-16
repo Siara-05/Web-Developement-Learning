@@ -18,7 +18,7 @@ const getcolor = () => {
     
      // Copy the color code to the user's clipboard
     navigator.clipboard.writeText(randomCode);
-}
+} 
 
 // Event calling
 // Attach a click event listener to the button
