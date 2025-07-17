@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title> DOM Manipulation </title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-    <div>
-        <h1>Hellow Sir ji</h1>
-        <h1>Hii </h1>
-        <h1>Hii </h1>
-        
+
+  <div class="container">
+    <h1 id="main-title">Hey There !</h1>
+
+    <div class="btn-group">
+      <button id="change-text-btn"> Change the Titlen</button>
+      <button id="add-paragraph-btn"> Add Paragraph </button>
+      <button id="toggle-class-btn"> Toggle Style </button>
+      <button id="remove-box-btn"> Remove Box </button>
     </div>
 
+    <div class="input-section">
+      <input type="text" id="input-box" placeholder="Type something..." />
+      <p id="input-display">You typed: </p>
+    </div>
 
-    <script src="script.js"></script>
+    <div id="box" class="box"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
