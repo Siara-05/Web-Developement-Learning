@@ -43,7 +43,7 @@ const [num, setNum] = useState(0);
 
   return (
     <div>
-      <h2>Number is {num} </h2>
+      <h2 className='text-4xl bg-purple-500 text-yellow'> Number is {num} </h2>
       <button onClick={increatment}>Increatment</button>
       <button onClick= {decrement}>Decreatment</button>
     </div>
