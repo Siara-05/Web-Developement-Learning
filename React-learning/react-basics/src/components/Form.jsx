@@ -30,13 +30,13 @@ const Form = () => {
           }}
           type="text"
           placeholder='Enter your name'
-          className='m-10 text-xl text-black rounded  mx-80' // Tailwind classes for styling
+          className='px-0.5 py-0.5 m-10 text-xl rounded text-black mx-80' // Tailwind classes for styling
         />
 
         {/* Submit button */}
         <button
           type="submit" // Always good practice to specify type explicitly
-          className='m-2 font-semibold rounded bg-emerald-500'
+          className='m-1 font-semibold rounded bg-emerald-500'
         >
           Submit
         </button>
