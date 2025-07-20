@@ -1,23 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 
+// Functional component named Form
 const Form = () => {
 
-    const submitHandler = (e) => {
-        e.preventDefault()
+  // useState hook to store and manage input value
+  const [username, setusername] = useState("")
 
-        console.log("Form submitted");
-    }
+  // Function that runs when form is submitted
+  const submithandler = (e) => {
+    e.preventDefault(); // Stops the page from refreshing on form submit
+
+    console.log(username); // Logs the entered username in the console
+
+    setusername(""); // Clears the input field after submission
+  }
 
   return (
     <div>
-        <form onSubmit={(e)=>{
-            submitHandler(e)
-        }}>
-            <input type="text" placeholder='Enter your name'  className='px-0.5 py-0.5 m-10 text-xl rounded'/>
-            <button className='font-semibold bg-emerald-500 rounded'> Submit </button>
-        </form>
+      {/* Form element with onSubmit event handler */}
+      <form onSubmit={(e) => {
+        submithandler(e); // Calls the submit handler and passes the event object
+      }}>
+
+        {/* Controlled input field */}
+        <input
+          value={username} // input value is tied to state (makes it a controlled component)
+          onChange={(e) => {
+            setusername(e.target.value); // Updates state on every keystroke
+          }}
+          type="text"
+          placeholder='Enter your name'
+          className='px-0.5 py-0.5 m-10 text-xl rounded' // Tailwind classes for styling
+        />
+
+        {/* Submit button */}
+        <button
+          type="submit" // Always good practice to specify type explicitly
+          className='font-semibold rounded bg-emerald-500'
+        >
+          Submit
+        </button>
+      </form>
     </div>
   )
 }
 
-export default Form
+export default Form;
