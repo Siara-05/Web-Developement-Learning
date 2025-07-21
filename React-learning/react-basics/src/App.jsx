@@ -7,14 +7,20 @@ import Form from './components/Form'
 import Number from './components/Number'
 import { Route, Routes } from 'react-router-dom'
 import Card from './components/Card'
+import Header from './components/Header'
 
 
 const App = () => {
   return (
     <>
+    
+    <Header />
 
      <Routes>
-        <Route  path='/card' element={<Card />}/>
+      <Route path='/' element={<h1 className="mt-10 text-2xl text-center">Welcome to Siara</h1>} />
+        <Route  path='/number' element={<Number />}/>
+        <Route  path='/form' element={<Form />} />
+        <Route  path='/footer' element={<Footer />} />
      </Routes>
     
     {/* <Navbar />
