@@ -1,26 +1,28 @@
 import React, { useState } from 'react';
-import './App.css'; // Ensure this line is included!
+import './App.css'; // Make sure App.css exists and is linked properly
 
 function App() {
+  // State to store form data (name and email)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
   });
 
+  // Update form data on input change
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      [name]: value, // updates the correct field based on input name
     }));
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // prevent default form reload
     console.log('Form submitted:', formData);
     alert(`Hello ${formData.name}, your email is ${formData.email}`);
-    setFormData({ name: '', email: '' });
+    setFormData({ name: '', email: '' }); // reset form fields
   };
 
   return (
