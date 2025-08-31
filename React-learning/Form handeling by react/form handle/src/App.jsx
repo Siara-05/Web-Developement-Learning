@@ -12,6 +12,7 @@ function App() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
+      
       ...prevData,
       [name]: value, // updates the correct field based on input name
     }));
