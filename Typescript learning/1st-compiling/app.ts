@@ -6,3 +6,5 @@
 
  let start = 16;
  const alphabet = "hi";
+
+ console.log('a =')
