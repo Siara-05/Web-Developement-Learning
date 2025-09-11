@@ -7,4 +7,4 @@ function abcd() {
 let start = 16;
 const alphabet = "hi";
 //# sourceMappingURL=app.js.map
- console.log('a =')
+ console.log('a = alphabet')
