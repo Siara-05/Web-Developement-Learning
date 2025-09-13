@@ -1,4 +1,5 @@
 # 📚 TypeScript Types Basics
+<hr>
 
 A comprehensive guide to understanding TypeScript's type system.  
 This repository covers fundamental types and type concepts in TypeScript, perfect for beginners and developers aiming to strengthen their understanding of static typing in JavaScript.
