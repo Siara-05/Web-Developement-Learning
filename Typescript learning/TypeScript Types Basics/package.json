@@ -1,0 +1,12 @@
+{
+  "name": "typescript-types-basics",
+  "version": "1.0.0",
+  "description": "A comprehensive guide to understanding TypeScript's type system.  \r This repository covers fundamental types and type concepts in TypeScript, perfect for beginners and developers aiming to strengthen their understanding of static typing in JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
