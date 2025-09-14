@@ -32,3 +32,4 @@ let tuple: [string, number] = ["hello", 42];
 
 
 
+// Lets learn Enums now
