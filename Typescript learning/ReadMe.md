@@ -1,2 +1,2 @@
-# Here we will learn Typescript 
+## Here we will learn Typescript 
 <hr>
