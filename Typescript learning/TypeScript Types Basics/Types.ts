@@ -29,7 +29,7 @@ let tuple: [string, number] = ["hello", 42];
 
 // 4) Enums 
 // 5) Other, unknown, void, undefined, null , never
-
+//  boolean
 
 
 // Lets learn Enums now
