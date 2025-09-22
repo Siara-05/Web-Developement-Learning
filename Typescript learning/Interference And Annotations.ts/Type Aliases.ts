@@ -12,3 +12,4 @@ function abcd(obj: argument) {
 
 }
 abcd("siara");
+
