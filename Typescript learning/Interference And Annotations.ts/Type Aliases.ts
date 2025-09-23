@@ -6,7 +6,7 @@
 type sankhya = number | null;
 let ab: sankhya;
 
-type argument = string | null;
+type argument = string | null | boolean;
 
 function abcd(obj: argument) {
 
