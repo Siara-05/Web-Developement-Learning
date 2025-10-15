@@ -23,6 +23,7 @@ This repository covers fundamental types and type concepts in TypeScript, perfec
 - [Resources](#resources)  
 - [License](#license)  
 
+
 ---
 
 ## ✅ Primitive Types
